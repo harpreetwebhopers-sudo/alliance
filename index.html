@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alliance Healthcare | Trusted Pharmaceutical Company Since 2004</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#600d28",
+                        "accent": "#d36a88",
+                        "burgundy-dark": "#4a0a1e",
+                        "burgundy-light": "#8a1c3d",
+                        "background-light": "#fdfbfc",
+                        "background-dark": "#1a080d",
+                        "form-blue": "#005ea2",
+                        "form-orange": "#f37021",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "sans": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #600d28;
+            --accent-color: #d36a88;
+        }
+        body {
+            font-family: "Plus Jakarta Sans", sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-overlay {
+            background: linear-gradient(90deg, rgba(96, 13, 40, 0.92) 0%, rgba(96, 13, 40, 0.7) 50%, rgba(0, 0, 0, 0.3) 100%);
+        }
+        .nav-sticky {
+            @apply sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100 transition-all duration-300;
+        }
+        .logo-container {
+            height: 42px;
+            width: auto;
+        }
+        .logo-container img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+        .usp-bar {
+            background: white;
+            box-shadow: 0 4px 20px -5px rgba(0,0,0,0.1);
+        }
+        .form-input {
+            @apply w-full px-4 py-3 rounded-full border border-gray-200 bg-white focus:ring-2 focus:ring-form-blue/20 focus:border-form-blue outline-none transition-all text-slate-700 text-sm;
+        }
+        .form-label {
+            @apply block text-sm font-medium text-slate-500 mb-2 ml-1;
+        }
+    </style>
+</head>
+<body class="bg-background-light text-slate-900">
+<header class="nav-sticky">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-8">
+<a class="logo-container" href="#">
+<img alt="Alliance Healthcare Products Logo" src="images/logo.webp"/>
+</a>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-[13px] font-bold text-slate-600 hover:text-primary transition-colors" href="#about">ABOUT US</a>
+<a class="text-[13px] font-bold text-slate-600 hover:text-primary transition-colors" href="#products">PRODUCTS</a>
+<a class="text-[13px] font-bold text-slate-600 hover:text-primary transition-colors" href="#global">GLOBAL NETWORK</a>
+<a class="text-[13px] font-bold text-slate-600 hover:text-primary transition-colors" href="#contact">CONTACT</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden sm:flex gap-3 border-r border-slate-200 pr-6">
+<a class="w-8 h-8 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="w-8 h-8 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">alternate_email</span>
+</a>
+</div>
+<div class="hidden md:block text-right">
+    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+        Inquiry Hotline
+    </p>
+    <a href="tel:+919814878111"
+       class="text-sm font-black text-primary hover:underline">
+        +91 98148 78111
+    </a>
+</div>
+
+<a class="px-6 py-3 bg-primary text-white text-[13px] font-black uppercase tracking-wider rounded-sm hover:bg-burgundy-light transition-all shadow-lg shadow-primary/20" href="#quote">
+                    Get a Quote
+                </a>
+</div>
+</div>
+</header>
+<main>
+<section class="relative min-h-[600px] flex items-center bg-cover bg-center overflow-hidden" style="background-image: url('images/hero banner.webp');">
+<div class="absolute inset-0 hero-overlay"></div>
+<div class="max-w-7xl mx-auto px-6 w-full py-20 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 text-white">
+<div class="inline-flex items-center gap-2 bg-accent px-3 py-1 mb-6 rounded-sm">
+<span class="material-symbols-outlined text-sm font-bold">verified</span>
+<span class="text-[11px] font-black uppercase tracking-widest">ISO 13485 &amp; CE Certified</span>
+</div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] mb-6">
+                            ALLIANCE Healthcare &amp; Trusted Pharmaceutical <span class="text-accent">Company </span> &amp; Since 2004.
+                        </h1>
+<p class="text-lg md:text-xl text-white/80 max-w-xl leading-relaxed mb-8">
+                            Delivering high-quality and affordable pharmaceutical products, trusted by doctors across North India.
+                        </p>
+<div class="flex items-center gap-4">
+<div class="flex -space-x-3">
+<img alt="User" class="w-10 h-10 rounded-full border-2 border-primary object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAKNvHrpyaLOYOuMGXiyNvG2dtonneXMraoPH6i-mmRRPp8zpdRWQw2f1h00kKohbebG0DB3OhLDJXn1DPKg6ip2uSgTIdye7uY9jn9hq4wblmRIDTq-j7LPatBprfgqwiTsDpboXSfsuftqlye3WJ-9FWRskLuxb8HLD22gLJWLM7m63IfHAwe5BJDesQ_rqjRFmJK-10MkrTuyKuTcbzH0Jms3OVqKqudJXLk_T_kFFTuShgq_fAK5y7S7uqHjuMyMxnWrQmF6J1"/>
+<img alt="User" class="w-10 h-10 rounded-full border-2 border-primary object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwIVlzPUq55wC2f57z5gGe8riAfTgoQzvQyrvm9P-gLVTCpEvgNhIxuYdCY8mnD6KhQaBXu--3IkCaGz06sSYGE4l2PFCSBFT37uuQBGyTrEWiErlhpRskKixxkS6axhYNpdXncU75pb_0oZsXBCxLL8k7TkRbAYWGaXXTmEZvA7bJy9DtkGEIW-VF2YuxEzjj0A5SPHCSumx_Hsc6nvdTdGd6bvWtfc9ljA43hjxN2T1VnCF6l4p8qZRTRl6w6NckkkYclA1isak_"/>
+<img alt="User" class="w-10 h-10 rounded-full border-2 border-primary object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLBaibVd9rnrifOoTYN2wMXEOVhLruy3_Yrj8sktxwVwXefiZtnWfMowTfA3N6d7zPvq3oFLbmolVWDfSsL45djcdNfoXX3IABr4PkSoKQV9BNXq-_M0EiUU8lN1Ayl9ZKRIhTC1tE-owDQK7roR5ufm_L-jAscV63SaOYIc8TOuelpb_sayxL3KlD-tPpW-iaQeLOuSqKJrK0UxkYRyI8BLvPVgWc3-7H_y5Pj97pWG_xTZ1cp1kMjxhRpbxRp5iDvMfTKc7tbGbB"/>
+</div>
+<p class="text-sm font-bold text-white/90">Trusted by 1000+ Healthcare Institutions Across North India</p>
+</div>
+</div>
+<div class="lg:col-span-6" id="quote">
+<div class="bg-white p-10 rounded-[24px] shadow-2xl relative">
+<div class="mb-8">
+<h3 class="text-xl font-bold text-form-orange">For more details write to us here...</h3>
+</div>
+<form class="space-y-4">
+<div>
+<label class="form-label">Full Name</label>
+<input class="form-input" placeholder="" type="text"/>
+</div>
+<div>
+<label class="form-label">Email Address</label>
+<input class="form-input" placeholder="" type="email"/>
+</div>
+<div>
+<label class="form-label">Mobile Number</label>
+<input class="form-input" placeholder="" type="tel"/>
+</div>
+<div>
+<label class="form-label">Company</label>
+<input class="form-input" placeholder="" type="text"/>
+</div>
+<div>
+<label class="form-label">Message</label>
+<textarea class="w-full px-4 py-3 rounded-[24px] border border-gray-200 bg-white focus:ring-2 focus:ring-form-blue/20 focus:border-form-blue outline-none transition-all text-slate-700 text-sm" placeholder="" rows="4"></textarea>
+</div>
+<div class="pt-2">
+<button class="px-10 py-3.5 bg-form-blue text-white font-bold text-lg rounded-full shadow-lg hover:bg-blue-800 transition-all flex items-center justify-center" type="submit">
+                                        Submit
+                                    </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="relative z-20 -mt-10 max-w-7xl mx-auto px-6">
+<div class="usp-bar grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-slate-100 rounded-sm">
+<div class="flex items-center gap-5 p-8">
+<span class="material-symbols-outlined text-primary text-4xl">history</span>
+<div>
+<p class="text-xl font-black text-primary">20+ Years</p>
+<p class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Industry Experience</p>
+</div>
+</div>
+<div class="flex items-center gap-5 p-8">
+<span class="material-symbols-outlined text-primary text-4xl">inventory_2</span>
+<div>
+<p class="text-xl font-black text-primary">Trusted Brands</p>
+<p class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Doctor Prescribed <br>
+Across North India</p>
+</div>
+</div>
+<div class="flex items-center gap-5 p-8">
+<span class="material-symbols-outlined text-primary text-4xl">public</span>
+<div>
+<p class="text-xl font-black text-primary">Gastro · Medicine</p>
+<p class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Focused Therapeutic Segments</p>
+</div>
+</div>
+<div class="flex items-center gap-5 p-8">
+<span class="material-symbols-outlined text-primary text-4xl">verified_user</span>
+<div>
+<p class="text-xl font-black text-primary">ISO 13485 &amp; CE</p>
+<p class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Quality Certified</p>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-6 py-24" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-video bg-slate-200 rounded-sm overflow-hidden shadow-2xl">
+<img alt="Alliance Healthcare Manufacturing" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="images/Delivering Trusted.webp"/>
+</div>
+<div class="absolute -bottom-8 -right-8 bg-primary text-white p-8 rounded-sm shadow-xl border-l-8 border-accent">
+<p class="text-4xl font-black">2004</p>
+<p class="text-[11px] font-bold opacity-80 uppercase tracking-widest">Established</p>
+</div>
+</div>
+<div class="space-y-6">
+<h2 class="text-xs font-black text-accent uppercase tracking-[0.3em]">About Alliance Healthcare</h2>
+<h3 class="text-4xl font-black text-primary leading-tight">Delivering Trusted Pharmaceutical Care Since 2004</h3>
+<p class="text-lg text-slate-600 leading-relaxed">
+                        ALLIANCE Healthcare began its journey in 2004 with a clear vision to provide high-quality and affordable pharmaceutical solutions to patients across India.<br>
+
+Today, ALLIANCE Healthcare is a well-established and trusted name in the North Indian pharmaceutical market, with a strong presence in Gastroenterology, Medicine, and Surgery segments. The company’s brands are widely prescribed by leading doctors, reflecting consistent quality and clinical trust.<br>
+
+One of its flagship brands, VISAB, is among the most commonly prescribed laxatives by gastroenterologists, physicians, and surgeons across North India.
+                    </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+<div class="space-y-2">
+<span class="material-symbols-outlined text-accent text-3xl">precision_manufacturing</span>
+<h4 class="font-bold text-primary">Quality-Driven Formulations</h4>
+<p class="text-sm text-slate-500">
+Ethically developed pharmaceutical products following quality standards.
+</p>
+</div>
+<div class="space-y-2">
+<span class="material-symbols-outlined text-accent text-3xl">local_shipping</span>
+<h4 class="font-bold text-primary">Strong Distribution Network</h4>
+<p class="text-sm text-slate-500">
+Reliable supply chain supporting doctors and distributors across North India.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg-slate-50 py-24" id="products">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-xs font-black text-accent uppercase tracking-[0.3em] mb-4">Our Specialization</h2>
+            <h3 class="text-4xl font-black text-primary mb-4">Our Pharmaceutical Product Range</h3>
+            <p class="text-slate-600">Trusted formulations across Gastro, Medicine, and Surgery segments.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+
+            <!-- Gastro Care -->
+            <div class="group bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
+                <div class="aspect-square bg-slate-100 overflow-hidden">
+                    <img alt="Gastro Care" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                         src="images/Gastro Care.webp"/>
+                </div>
+                <div class="p-5">
+                    <h4 class="font-black text-primary text-sm uppercase tracking-tight mb-3">Gastro Care</h4>
+                    <a class="text-[11px] font-black text-accent uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all" href="#quote">
+                        Inquire Now <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Pain Care -->
+            <div class="group bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
+                <div class="aspect-square bg-slate-100 overflow-hidden">
+                    <img alt="Pain Care" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                         src="images/Pain Care.webp"/>
+                </div>
+                <div class="p-5">
+                    <h4 class="font-black text-primary text-sm uppercase tracking-tight mb-3">Pain Care</h4>
+                    <a class="text-[11px] font-black text-accent uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all" href="#quote">
+                        Inquire Now <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Nutrition Care -->
+            <div class="group bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
+                <div class="aspect-square bg-slate-100 overflow-hidden">
+                    <img alt="Nutrition Care" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                         src="images/Nutrition Care.webp"/>
+                </div>
+                <div class="p-5">
+                    <h4 class="font-black text-primary text-sm uppercase tracking-tight mb-3">Nutrition Care</h4>
+                    <a class="text-[11px] font-black text-accent uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all" href="#quote">
+                        Inquire Now <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Pediatric Care -->
+            <div class="group bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
+                <div class="aspect-square bg-slate-100 overflow-hidden">
+                    <img alt="Pediatric Care" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                         src="images/Pediatric Care.webp"/>
+                </div>
+                <div class="p-5">
+                    <h4 class="font-black text-primary text-sm uppercase tracking-tight mb-3">Pediatric Care</h4>
+                    <a class="text-[11px] font-black text-accent uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all" href="#quote">
+                        Inquire Now <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- General Medicine -->
+            <div class="group bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
+                <div class="aspect-square bg-slate-100 overflow-hidden">
+                    <img alt="General Medicine" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                         src="images/General Medicine.webp"/>
+                </div>
+                <div class="p-5">
+                    <h4 class="font-black text-primary text-sm uppercase tracking-tight mb-3">General Medicine</h4>
+                    <a class="text-[11px] font-black text-accent uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all" href="#quote">
+                        Inquire Now <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="py-16 border-y border-slate-200">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row items-center justify-between gap-12 opacity-80 grayscale hover:grayscale-0 transition-all">
+<div class="text-center md:text-left">
+<p class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-2">Global Quality Recognition</p>
+<h5 class="text-lg font-black text-primary">Certified Compliance</h5>
+</div>
+<div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-4xl text-slate-400">verified</span>
+<span class="text-xl font-black text-slate-400">ISO 13485</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-4xl text-slate-400">license</span>
+<span class="text-xl font-black text-slate-400">CE MARKED</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-4xl text-slate-400">approval</span>
+<span class="text-xl font-black text-slate-400">FDA COMPLIANT</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-4xl text-slate-400">factory</span>
+<span class="text-xl font-black text-slate-400">MAKE IN INDIA</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-primary py-24 relative overflow-hidden" id="global">
+    <!-- Background Map Texture -->
+    <div class="absolute inset-0 opacity-10 pointer-events-none">
+        <img alt="Background Map" class="w-full h-full object-cover invert"
+             src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn5_mQQG7hs1zzu2_NcvE0Wu3BMmICLApXvcr7bgTHF8QBnkK6Z35q6iC1Z4Z_j4e0mzXyxMY4tsTZD81Nz2YeK6SC3TJpTkdN-XXQ0823s5-7xfbZJzJ81u9PyMLWe8mnrDt6qJ4CSOv6YByR8qrFr9bpR56Hjc-MdkCF0LWE2uNw86dbbEHJprEaZG8IAJTab90LMstrgj6azQRZ4ouGOkF9bLftQhy2YG3Ya93V6lOMimT_AcKA6GB4m0bdJ3FqisuGZVcsQjgr"/>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+
+            <!-- LEFT CONTENT -->
+<div>
+    <h2 class="text-xs font-black text-accent uppercase tracking-[0.3em] mb-4">
+        Trusted Pharmaceutical Presence
+    </h2>
+
+    <h3 class="text-4xl md:text-5xl font-black text-white mb-8">
+        Healthcare Across North India
+    </h3>
+
+    <!-- Paragraph: made white -->
+    <p class="text-lg text-white mb-10 leading-relaxed">
+        ALLIANCE Healthcare has built a strong and reliable presence across North India,
+        supplying high-quality and affordable pharmaceutical products trusted by doctors,
+        clinics, and healthcare professionals.
+    </p>
+
+    <div class="grid grid-cols-2 gap-8">
+
+        <!-- 20+ Years -->
+        <div class="border-l-4 border-accent pl-6">
+            <p class="text-[1.5rem] md:text-4xl font-black text-white">
+                20+ Years
+            </p>
+            <!-- Label: made white -->
+            <p class="text-[11px] font-bold text-white uppercase tracking-widest mt-1">
+                Industry Experience
+            </p>
+        </div>
+
+        <!-- Multistate -->
+        <div class="border-l-4 border-accent pl-6">
+            <p class="text-[1.5rem] md:text-4xl font-black text-white">
+                Multistate
+            </p>
+            <!-- Label: made white -->
+            <p class="text-[11px] font-bold text-white uppercase tracking-widest mt-1">
+                Active Distribution Network
+            </p>
+        </div>
+
+    </div>
+</div>
+
+
+            <!-- RIGHT CONTENT : CORPORATE OFFICE -->
+            <div class="relative rounded-sm overflow-hidden shadow-2xl bg-white p-8 border border-white/10">
+
+                <h4 class="text-xl font-black text-primary mb-4">
+                    Corporate Office
+                </h4>
+
+                <p class="text-sm text-slate-700 leading-relaxed mb-4">
+                    <strong>ALLIANCE HEALTHCARE PRODUCTS</strong><br>
+                    SCO 9, First Floor<br>
+                    Industrial Area, Phase-2<br>
+                    Ramdarbar, Chandigarh – 160002
+                </p>
+
+                <p class="text-sm text-slate-700 mb-4">
+                    <strong>Phone:</strong>
+                    <a href="tel:+919814878111" class="text-primary font-semibold">
+                        +91 98148 78111
+                    </a><br>
+
+                    <strong>Email:</strong>
+                    <a href="mailto:alliancehealthcareproducts@gmail.com" class="text-primary font-semibold">
+                        alliancehealthcareproducts@gmail.com
+                    </a>
+                </p>
+
+                <a href="https://maps.app.goo.gl/MXc7pidzhU1QrFHv8"
+                   target="_blank"
+                   class="inline-block mt-2 px-6 py-3 bg-primary text-white text-sm font-bold rounded hover:bg-burgundy-light transition">
+                    Get Directions
+                </a>
+
+                <!-- Badge -->
+                <div class="absolute top-4 right-4 bg-primary/90 px-4 py-2 rounded-sm">
+                    <p class="text-white text-xs font-black uppercase tracking-widest flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                        Corporate Office
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="bg-slate-100 py-20" id="final-contact">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+
+            <!-- LEFT SIDE : FORM (COMPACT) -->
+            <div class="lg:col-span-5 bg-white p-8 md:p-10 rounded-[20px] shadow-xl">
+                <div class="mb-6">
+                    <h3 class="text-2xl font-bold text-form-orange mb-2">
+                        For more details write to us here...
+                    </h3>
+                    <p class="text-slate-500 text-sm">
+                        Our team will get back to you within 24 hours.
+                    </p>
+                </div>
+
+                <form class="space-y-5">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="form-label">Full Name</label>
+                            <input class="form-input" type="text">
+                        </div>
+                        <div>
+                            <label class="form-label">Email Address</label>
+                            <input class="form-input" type="email">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="form-label">Mobile Number</label>
+                            <input class="form-input" type="tel">
+                        </div>
+                        <div>
+                            <label class="form-label">Company</label>
+                            <input class="form-input" type="text">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="form-label">Message</label>
+                        <textarea
+                            class="w-full px-4 py-3 rounded-[20px] border border-gray-200 bg-white focus:ring-2 focus:ring-form-blue/20 focus:border-form-blue outline-none transition-all text-slate-700 text-sm"
+                            rows="4"></textarea>
+                    </div>
+
+                    <div class="pt-2">
+                        <button
+                            class="px-10 py-3 bg-form-blue text-white font-bold text-lg rounded-full shadow-lg hover:bg-blue-800 transition-all"
+                            type="submit">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- RIGHT SIDE : MAP (BIGGER) -->
+            <div class="lg:col-span-7 rounded-[20px] overflow-hidden shadow-2xl border border-slate-200 bg-white">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d439301.69777947315!2d76.846654!3d30.660875!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fec9049ddeee7%3A0x99b05209bfba98f9!2sIndustrial%20Area%20Phase%20II%2C%20Chandigarh%2C%20160002!5e0!3m2!1sen!2sin!4v1767957336091!5m2!1sen!2sin"
+                    class="w-full h-full min-h-[520px]"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+</main>
+<footer class="bg-primary text-white pt-20 pb-10" id="contact">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+
+            <!-- BRAND / ABOUT -->
+            <div class="flex flex-col items-center md:items-start">
+                <a href="/" class="inline-block mb-6">
+                    <img 
+                        src="images/logo.webp"
+                        alt="Alliance Healthcare Products"
+                        class="h-14 w-auto object-contain"
+                    >
+                </a>
+
+                <p class="text-white text-sm leading-relaxed mb-6 text-center md:text-left max-w-xs">
+                    ALLIANCE Healthcare is a trusted pharmaceutical company committed to
+                    quality, affordability, and ethical healthcare solutions since 2004.
+                </p>
+
+                <div class="flex gap-4">
+                    <a href="/" class="w-10 h-10 rounded-sm bg-white/10 flex items-center justify-center hover:bg-white/20 transition-all">
+                        <span class="material-symbols-outlined text-lg text-white">public</span>
+                    </a>
+
+                    <a href="mailto:alliancehealthcareproducts@gmail.com"
+                       class="w-10 h-10 rounded-sm bg-white/10 flex items-center justify-center hover:bg-white/20 transition-all">
+                        <span class="material-symbols-outlined text-lg text-white">mail</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CONTACT DETAILS -->
+            <div>
+                <h5 class="text-xs font-black uppercase tracking-widest mb-8 text-white">
+                    Contact Details
+                </h5>
+
+                <ul class="space-y-4 text-sm">
+                    <li class="flex items-start gap-4">
+                        <span class="material-symbols-outlined text-white text-xl">location_on</span>
+                        <span class="text-white">
+                            SCO 9, First Floor, Industrial Area Phase-2,
+                            Ramdarbar, Chandigarh – 160002
+                        </span>
+                    </li>
+
+                    <li class="flex items-center gap-4">
+                        <span class="material-symbols-outlined text-white text-xl">phone_iphone</span>
+                        <a href="tel:+919814878111" class="text-white font-bold">
+                            +91 98148 78111
+                        </a>
+                    </li>
+
+                    <li class="flex items-center gap-4">
+                        <span class="material-symbols-outlined text-white text-xl">mail</span>
+                        <a href="mailto:alliancehealthcareproducts@gmail.com" class="text-white">
+                            alliancehealthcareproducts@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- PRODUCT RANGE -->
+            <div>
+                <h5 class="text-xs font-black uppercase tracking-widest mb-8 text-white">
+                    Product Categories
+                </h5>
+
+                <ul class="space-y-3 text-sm text-white">
+                    <li><a class="hover:underline" href="#">Gastro Care</a></li>
+                    <li><a class="hover:underline" href="#">Pain Care</a></li>
+                    <li><a class="hover:underline" href="#">Nutrition Care</a></li>
+                    <li><a class="hover:underline" href="#">Pediatric Care</a></li>
+                    <li><a class="hover:underline" href="#">General Medicine</a></li>
+                </ul>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div>
+                <h5 class="text-xs font-black uppercase tracking-widest mb-8 text-white">
+                    Quick Links
+                </h5>
+
+                <ul class="space-y-3 text-sm text-white">
+                    <li><a class="hover:underline" href="#about">About Us</a></li>
+                    <li><a class="hover:underline" href="#products">Our Products</a></li>
+                    <li><a class="hover:underline" href="#final-contact">Contact Us</a></li>
+                    <li><a class="hover:underline" href="#">Distribution Partners</a></li>
+                    <li><a class="hover:underline" href="#">Careers</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM BAR -->
+        <div class="pt-10 border-t border-white/20 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-[10px] font-bold text-white uppercase tracking-[0.2em]">
+                © 2026 Alliance Healthcare Products. All Rights Reserved.
+            </p>
+
+            <div class="flex items-center gap-4 text-[10px] font-black uppercase tracking-widest text-white">
+                <span class="border border-white/30 px-3 py-1 rounded-sm">ISO 13485</span>
+                <span class="border border-white/30 px-3 py-1 rounded-sm">CE Certified</span>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<!-- MOBILE FIXED CONTACT BAR (IMPROVED) -->
+<div class="fixed bottom-3 left-1/2 -translate-x-1/2 z-50 md:hidden w-[92%] max-w-md">
+    <div class="flex overflow-hidden rounded-full shadow-2xl border border-white/20 backdrop-blur bg-white/90">
+
+        <!-- CALL -->
+        <a href="tel:+919814878111"
+           class="flex-1 flex items-center justify-center gap-2 py-3 text-sm font-bold text-white bg-primary hover:bg-burgundy-light transition">
+            <span class="material-symbols-outlined text-base">call</span>
+            Call Us
+        </a>
+
+        <!-- WHATSAPP -->
+        <a href="https://wa.me/919814878111"
+           target="_blank"
+           class="flex-1 flex items-center justify-center gap-2 py-3 text-sm font-bold text-white bg-green-600 hover:bg-green-700 transition">
+            <span class="material-symbols-outlined text-base">chat</span>
+            WhatsApp
+        </a>
+
+    </div>
+</div>
+
+
+
+</body></html>
+
+
